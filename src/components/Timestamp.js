@@ -1,5 +1,7 @@
 import React from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
+
 
 class Timestamp extends React.Component {
   render() {
@@ -12,3 +14,7 @@ class Timestamp extends React.Component {
 }
 
 export default Timestamp;
+
+Timestamp.propTypes = {
+  time: PropTypes.string
+}
